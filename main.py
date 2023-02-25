@@ -1,10 +1,13 @@
-import operaciones
-def main():
-    print(operaciones.suma(2,7))
-    print(operaciones.resta(5,4))
-    print(operaciones.multip(3,4))
-    print(operaciones.divis(8,2))
+import datetime
 
-if __name__ == '__main__':
-    main()
+hora_actual = datetime.datetime.now()
+hora = hora_actual.hour
+tiempo_restante = 19 - hora
+if hora >= 19:
+        print("son las ", hora_actual, "ya se acabó el día, es hora de ir a casa")
+else:
+        print("todavìa no son las 7","faltan ", tiempo_restante,  "horas")
+
+
+
 
